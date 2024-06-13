@@ -129,7 +129,7 @@ const DnDFlow = () => {
     });
 
     if (nodesWithEmptyTargets.length > 1) {
-      setErrorMessage("Error: More than one node has empty target handles.");
+      setErrorMessage("Connot save Flow");
     } else {
       setErrorMessage("Flow saved successfully!");
       localStorage.setItem('flowData', JSON.stringify({ nodes, edges }));
